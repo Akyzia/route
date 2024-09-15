@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-draw@1.0.4/dist/leaflet.draw.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="../src/Control.MiniMap.css"/>
+
+</head>
+<body>
+   
+  <div id="map"></div>
+
+  <div id="controls">
+    <input type="file" id="fileInput" accept=".zip" style="display:none;" />
+    <button id="importerBtn" class="btn">Importar Shapefile</button>
+    <!--<button id="downloadBtn" class="btn">Download Map</button>-->
+    <button id="deleteBtn" onclick="deleteMarkers()" class="btn">Deletar Marcadores</button>
+    <button id="deleteBtn" onclick="deleteRoutes()" class="btn">Deletar Rotas</button>
+    <button id="toggleMarkersBtn" class="btn">Desabilitar Marcadores</button>
+    <!--<button id="exportKmlBtn" class="btn">Exportar Rota como KML</button>-->
+  
+  </div>
+ 
+  <!-- Scripts principais -->
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
+  <script src="https://unpkg.com/shapefile@0.6.6/dist/shapefile.js"></script>
+  <script src="https://unpkg.com/leaflet-draw@1.0.4/dist/leaflet.draw.js"></script>
+  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-kml/1.0.0/leaflet-kml.min.js"></script>-->
+
+  <!-- Scripts personalizados -->
+ <!--<script src="exporter.js"></script>-->
+  <script src="javascript/importer.js"></script>
+  <script src="javascript/route.js"></script>
+  <script src="javascript/draw.js"></script>
+
+</body>
+</html>

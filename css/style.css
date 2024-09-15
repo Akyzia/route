@@ -1,0 +1,67 @@
+#map {
+  height: 80vh;
+  width: 60vw;
+  border: 1px solid #9b9b9b; }/* Adiciona uma borda ao mapa para visualização */
+
+
+  #controls {
+    position: fixed; /* Faz o contêiner ficar fixo na tela */
+    padding: 6px;
+    width: 160px;
+    top: 17px; /* Ajuste conforme necessário */
+    left: 60px; /* Ajuste conforme necessário */
+    z-index: 1000;
+    background-color: rgba(73, 73, 73, 0.726);
+    border-radius: 12px; /* Borda arredondada */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+  }
+  
+  .btn {
+    margin: 3px;
+    padding: 8px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+
+#importerBtn {
+  background-color: #4CAF50; /* Green */
+  position:relative;
+  width: 150px;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  border-radius: 12px; /* Borda arredondada */
+}
+
+#toggleMarkersBtn {
+  background-color: rgb(97, 175, 238); /* Green */
+  position:relative;
+  width: 150px;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  border-radius: 12px; /* Borda arredondada */
+}
+
+#fileInput {
+  display: none;
+}
+
+#deleteBtn {
+  background-color: rgb(223, 119, 119); /* Green */
+  position:relative;
+  width: 150px;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  border-radius: 12px; /* Borda arredondada */
+}
+
+/* Efeito ao passar o mouse sobre os botões */
+.btn:hover {
+  background-color: #45a049; /* Cor ao passar o mouse (verde) */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Aumenta a sombra para destacar o botão */
+  transform: scale(1.05); /* Aumenta ligeiramente o tamanho do botão */
+}
