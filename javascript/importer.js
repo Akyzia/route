@@ -76,14 +76,14 @@ function handleShapefileUpload(file) {
                 readNext();
               })
               .catch(function(error) {
-                console.error("Erro ao ler o shapefile:", error);
+                console.error("Erro ao ler o shapefile:", error);//validacao
               });
           });
       } else {
-        console.error("Shapefile e/ou DBF faltando no arquivo zip.");
+        console.error("Shapefile e/ou DBF faltando no arquivo zip.");//validacao
       }
     }).catch(function(error) {
-      console.error("Erro ao descompactar o arquivo zip:", error);
+      console.error("Erro ao descompactar o arquivo zip:", error);//validacao
     });
   };
 

@@ -63,7 +63,7 @@ function getRoute(start, end) {
 
       // Adicionar a nova rota no mapa
       const route = L.polyline(routeCoords, {
-        color: 'blue',
+        color: 'red',
         weight: 5,
         opacity: 0.7,
         lineJoin: 'round'

@@ -23,8 +23,8 @@ map.on(L.Draw.Event.CREATED, function (e) {
      // Define estilo para círculos
      if (e.layerType === 'circle') {
         layer.setStyle({
-            color: 'green',       // Cor da borda do círculo
-            fillColor: 'green',   // Cor de preenchimento verde
+            color: 'yellow',       // Cor da borda do círculo
+            fillColor: 'orange',   // Cor de preenchimento verde
             fillOpacity: 0.5      // Define uma opacidade de preenchimento
         });
     }
@@ -32,8 +32,8 @@ map.on(L.Draw.Event.CREATED, function (e) {
     // Define estilo para polígonos
     if (e.layerType === 'polygon') {
         layer.setStyle({
-            color: 'green',       // Cor da borda do polígono
-            fillColor: 'green',   // Cor de preenchimento verde
+            color: 'lime',       // Cor da borda do polígono
+            fillColor: 'lime',   // Cor de preenchimento verde
             fillOpacity: 0.5      // Define uma opacidade de preenchimento
         });
     }
@@ -41,15 +41,15 @@ map.on(L.Draw.Event.CREATED, function (e) {
     // Define estilo para polilinhas
     if (e.layerType === 'polyline') {
         layer.setStyle({
-            color: 'green'        // Cor da polilinha
+            color: 'lime'        // Cor da polilinha
         });
     }
 
     // Define estilo para retângulos
     if (e.layerType === 'rectangle') {
         layer.setStyle({
-            color: 'green',       // Cor da borda do retângulo
-            fillColor: 'green',   // Cor de preenchimento verde
+            color: 'lime',       // Cor da borda do retângulo
+            fillColor: 'lime',   // Cor de preenchimento verde
             fillOpacity: 0.5      // Define uma opacidade de preenchimento
         });
     }
@@ -58,11 +58,13 @@ map.on(L.Draw.Event.CREATED, function (e) {
     if (e.layerType === 'circlemarker') {
         layer.setStyle({
             radius: 5,            // Define um tamanho menor para o círculo (5 pixels de raio)
-            color: 'red',       // Cor da borda do círculo
-            fillColor: 'red',   // Cor de preenchimento verde
-            fillOpacity: 0.7      // Define uma opacidade de preenchimento
+            color: 'violet',       // Cor da borda do círculo
+            fillColor: 'violet',   // Cor de preenchimento verde
+            fillOpacity: 1      // Define uma opacidade de preenchimento
         });
     }
     editableLayers.addLayer(layer);
 });
+
+
 
